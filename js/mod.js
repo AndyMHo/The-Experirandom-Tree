@@ -20,7 +20,8 @@ let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0: Literally nothing</h3><br>
 		- Added nothing. Because it's literally nothing.<br>
 	<h3>v0.1: An Identity</h3><br>
-		- Modified mod info.
+		- Modified mod info.<br>
+		- Added the first upgrade.
 `
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
@@ -35,7 +36,7 @@ function getStartPoints(){
 
 // Determines if it should show points/sec
 function canGenPoints(){
-	return true
+	return hasUpgrade('p', 11)
 }
 
 // Calculate points/sec!
